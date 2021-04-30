@@ -11,6 +11,9 @@ In order to build st you need the Xlib header files. There are also added
 dependencies from the ligatures patch. Go check the ligatures patch page on
 [suckless.org](https://st.suckless.org/patches/ligatures/)
 
+## Configuration
+Please make all configuration changes to `config.h`
+
 ## Installation
 Edit config.mk to match your local setup (st is installed into
 the /usr/local namespace by default).
