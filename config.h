@@ -6,6 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Iosevka Nerd Font:pixelsize=15:antialias=true:autohint=true";
+static char *font2[] = { "Noto Color Emoji:pixelsize=14:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -108,7 +109,7 @@ char *termname = "xterm-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.95
+float alpha = 0.85;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -189,7 +190,6 @@ static uint forcemousemod = ShiftMask;
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "st.font",         STRING,  &font },
 		{ "color0",          STRING,  &colorname[0] },
 		{ "color1",          STRING,  &colorname[1] },
 		{ "color2",          STRING,  &colorname[2] },
